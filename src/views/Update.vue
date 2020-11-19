@@ -1,5 +1,5 @@
 <template>
-  <div class="update">
+  <div class="create">
     <h1>Update</h1>
     <form>
       <input
@@ -13,9 +13,9 @@
         placeholder="Insert image link"
         required
       />
-      <button class="choose-image" type="button" v-on:click="triggerChooseImg">
-        Choose Image
-      </button>
+      <!-- <button class="choose-image" type="button" v-on:click="triggerChooseImg">
+        Change wish
+      </button> -->
       <div>
         <img :src="post.image" class="image-preview" />
       </div>
@@ -42,12 +42,16 @@ export default {
         description: this.post.description,
         image: this.post.image,
       });
-      this.$router.push("/");
+      this.$router.push("/items");
     },
   },
 };
 </script>
 
 <style>
+
+img{
+    width: 70%;
+}
 
 </style>
