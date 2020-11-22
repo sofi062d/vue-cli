@@ -13,9 +13,6 @@
         placeholder="Insert image link"
         required
       />
-      <!-- <button class="choose-image" type="button" v-on:click="triggerChooseImg">
-        Change wish
-      </button> -->
       <div>
         <img :src="post.image" class="image-preview" />
       </div>

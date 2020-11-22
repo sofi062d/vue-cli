@@ -5,13 +5,14 @@
     <article v-for="post in posts" :key="post.id">
         <img :src="post.image" alt="" />
         <h3>{{ post.description }}</h3>
+        
+        <!--Update button-->
         <router-link :to="{ name: 'Update', params: { post: post } }">
           <button>Update</button>
         </router-link>
-
-        <button type="button" v-on:click="deletePost(post.id)">Delete</button>
-
         
+        <!--Delete button-->
+        <button type="button" v-on:click="deletePost(post.id)">Delete</button>
       </article>
   </div>
   </div>
@@ -46,6 +47,12 @@ export default {
 .item{
   border: solid grey 1px;
   margin: 20px;
+}
+
+button {
+  color:#07554B; 
+  font-weight: 500;
+    font-size: 14px;
 }
 
 </style>

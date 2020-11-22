@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    //Start page
     path: "/",
     name: "Create",
     component: Create

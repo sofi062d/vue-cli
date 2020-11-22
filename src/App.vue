@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!--Navigation-->
     <div id="nav">
       <router-link to="/">Make a wish</router-link> |
       <router-link to="/items">See wishlist</router-link> 
